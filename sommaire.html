@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+[(#REM) Cf.: http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+]<!--[if lt IE 7 ]> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js"> <!--<![endif]-->
+<head>
+  <script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);/*]]>*/</script>
+  <title>[(#NOM_SITE_SPIP|textebrut)][ - (#SLOGAN_SITE_SPIP|textebrut)]</title>
+  [<meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{150}|textebrut)" />]
+  <INCLURE{fond=inclure/head} />
+</head>
+
+<body class="pas_surlignable page_sommaire">
+<div id="main-container">
+<div id="main-nav">
+	<div class="row">
+			<div class="twelve columns">
+<img width="300" height="42" alt="OpenMandriva" src="#CHEMIN{images/OM-300pl.png}" style="padding-top: 10px;">
+			
+			<div id="mobile-toggle" class="show-for-small"><i class="entypo list"></i></div>
+			<div id="nav-holder" class="right">
+				<ul>
+					<li><a href="#features-scroll" class="scroll">FEATURES</a></li>
+					<li><a href="#gallery-scroll" class="scroll">GALLERY</a></li>
+					<li><a href="#download-scroll" class="scroll">DOWNLOAD</a></li>
+					<li><a href="#faq-scroll" class="scroll">F.A.Q</a></li>
+					<li><a class="scroll" href="#links-scroll">LINKS</a></li>
+					<li><a href="#donate-scroll"><div class="blue-btn">Donate</div></a></li>
+					<!-- cri <li><a target="_blank" href="#"><div class="blue-btn">Donate</div></a></li> cri -->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section id="home">
+	<div class="row">
+
+			<div id="home-slider" class="flexslider">
+				<ul class="slides">
+				<!-- cri -->
+					<li>
+						<div class="six columns animated fadeInUpBig slide-left hide-for-small">
+							<img alt="front" src="#CHEMIN{images/wireframes/om-a01.jpg}" />
+						</div>
+						
+						<div class="six columns animated fadeInRightBig slide-right">
+							<h1 class="text-right">Because it simply ROCKS!</h1>
+							<div class="hr hide-for-small"></div>
+							<p class="right text-right  hide-for-small">
+								A pinch of COMMUNITY, a pinch of PASSION, a pinch of INNOVATION, <br />flavored with FUN! 
+							</p>
+							
+							<a href="#download-scroll" class="scroll"><div class="btn right">Download OpenMandriva</div></a>
+						</div>
+					</li>
+
+				<!-- cri -->
+				<!-- cri
+					<li>
+						<div class="six columns animated fadeInLeftBig slide-left hide-for-small">
+							<img alt="front" src="#CHEMIN{images/wireframes/om-a02.jpg}" />
+						</div>
+						
+						<div class="six columns animated fadeInDownBig slide-right">
+							<h1 class="text-right">Because it simply ROCKS!</h1>
+							<div class="hr hide-for-small"></div>
+							<p class="right text-right  hide-for-small">
+								A pinch of COMMUNITY, a pinch of PASSION, a pinch of INNOVATION, <br />flavored with FUN! 
+							</p>
+							
+							<a href="#features-scroll" class="scroll"><div class="btn right">Explore Features</div></a>
+						</div>
+					</li>
+
+					<li>
+						<div class="six columns animated fadeInLeftBig slide-left hide-for-small">
+							<img alt="front" src="#CHEMIN{images/wireframes/om-a03.jpg}" />
+						</div>
+						
+						<div class="six columns animated fadeInDownBig slide-right">
+							<h1 class="text-right">Because it simply ROCKS!</h1>
+							<div class="hr hide-for-small"></div>
+							<p class="right text-right  hide-for-small">
+								A pinch of COMMUNITY, a pinch of PASSION, a pinch of INNOVATION, <br />flavored with FUN! 
+							</p>
+							
+							<a href="#features-scroll" class="scroll"><div class="btn right">Explore Features</div></a>
+						</div>
+					</li>
+
+					<li>
+						<div class="six columns animated fadeInLeftBig slide-left hide-for-small">
+							<img alt="front" src="#CHEMIN{images/wireframes/om-a04.jpg}" />
+						</div>
+						
+						<div class="six columns animated fadeInDownBig slide-right">
+							<h1 class="text-right">Because it simply ROCKS!</h1>
+							<div class="hr hide-for-small"></div>
+							<p class="right text-right  hide-for-small">
+								A pinch of COMMUNITY, a pinch of PASSION, a pinch of INNOVATION, <br />flavored with FUN! 
+							</p>
+							
+							<a href="#features-scroll" class="scroll"><div class="btn right">Explore Features</div></a>
+						</div>
+					</li>
+
+					<li>
+						<div class="six columns animated fadeInLeftBig slide-left hide-for-small">
+							<img alt="front" src="#CHEMIN{images/wireframes/om-a05.jpg}" />
+						</div>
+						
+						<div class="six columns animated fadeInDownBig slide-right">
+							<h1 class="text-right">Because it simply ROCKS!</h1>
+							<div class="hr hide-for-small"></div>
+							<p class="right text-right  hide-for-small">
+								A pinch of COMMUNITY, a pinch of PASSION, a pinch of INNOVATION, <br />flavored with FUN! 
+							</p>
+							
+							<a href="#features-scroll" class="scroll"><div class="btn right">Explore Features</div></a>
+						</div>
+					</li>
+
+
+					<li>
+						<div class="six columns animated fadeInLeftBig slide-left  hide-for-small">
+							<iframe src="http://player.vimeo.com/video/117332998?portrait=0&amp;color=31b7cc"></iframe>
+						</div>
+						
+						<div class="six columns animated fadeInDownBig slide-right">
+							<h1 class="text-right">Because it simply ROCKS!</h1>
+							<div class="hr  hide-for-small"></div>
+							<p class="right text-right  hide-for-small">
+								A pinch of COMMUNITY, a pinch of PASSION, a pinch of INNOVATION, <br />flavored with FUN! 
+							</p>
+							
+							<a href="#features-scroll" class="scroll"><div class="btn right">Explore Features</div></a>
+						</div>
+					</li>
+				cri -->
+				<!-- cri -->
+					
+				
+				</ul>
+			</div>
+		
+	</div>
+</section>
+
+<a id="features-scroll"></a>
+<section id="feature-list" class="even-section">
+
+	<div class="row inner-section section-preamble text-center animated fadeInDown">
+		<h2>OpenMandriva Lx<br />A delicious Linux recipe. Fun flavored</h2>
+		
+		<p>
+			OpenMandriva Lx is an exciting free Desktop Operating System that aims to cater to and interest first time and advanced users alike. It has the breadth and depth of an advanced system but is designed to be simple and straightforward in use.
+		</p>
+		<p>
+			OpenMandriva Lx comes from a 100% community-driven association that believes in the values of free software & collaboration and whose founding values are development, equality, co-operation, openness, freedom, group achievement, independence, and solidarity.
+		</p>
+		<div class="hr"></div>
+	</div>
+	
+	<div class="row feature-row inner-section flyIn">
+		<div class="three columns feature text-center">
+			<img alt="Feature Icon" src="#CHEMIN{images/icons/wandboard.png}" />
+			<h4 class="alt-h">WANDBOARD ARMV7</h4>
+			<p>
+				armv7 image for wandboard.org<br>
+				OpenMandriva added as officialy supported distro to wandboard download page.
+			</p>
+		</div>
+		
+		<div class="three columns feature text-center">
+			<img alt="Feature Icon" src="#CHEMIN{images/icons/graph.png}" />
+			<h4 class="alt-h">SIMPLE ANALYTICS</h4>
+			<p>
+				Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo.
+			</p>
+		</div>
+		
+		<div class="three columns feature text-center">
+			<img alt="Feature Icon" src="#CHEMIN{images/icons/briefcase.png}" />
+			<h4 class="alt-h">ENTERPRISE FEATURES</h4>
+			<p>
+				Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo.
+			</p>
+		</div>
+		
+		<div class="three columns feature text-center">
+			<img alt="Feature Icon" src="#CHEMIN{images/icons/wallet.png}" />
+			<h4 class="alt-h">AFFORDABLE PRICE</h4>
+			<p>
+				Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo.
+			</p>
+		</div>
+	</div>
+
+
+<!-- cri inizio notes -->
+	<div class="row inner-section">
+<h5>EFI Support</h5>
+<p>
+This release incorporates support for UEFI booting. You should be able to boot on UEFI machines; however, we have only performed limited testing.
+</p>
+
+<h5>Kernel</h5>
+<p>
+A new Kernel 3.18.16 NRJQL - a powerful variant of the 3.18.16 kernel that has been configured with desktop system performance, responsiveness, and realtime capabilities, in mind.
+</p>
+
+<div>
+<h5>Desktop</h5>
+<p>
+The oma-welcome, or Welcome to OpenMandriva Lx has been updated to reflect the new version. This application introduces users to OpenMandriva Lx and shows them some of the features we have, as well as providing quick links to common tasks such as updating, installing new software, and configuring a desktop.
+</p>
+
+<div>
+<h5>Xorg</h5>
+<p>
+We have upgraded Xorg to version 1.15.2, and Mesa to 10.4.7, which brings the latest free drivers for the best performance. A Compose cache is now incorporated which speeds up application startup time and reduces memory usage especially in locales with large Compose tables (e.g. all UTF-8 locales).
+</p>
+
+<div>
+<h5>KDE 4.14.3</h5>
+<p>
+We have upgraded to the latest and greatest version of the KDE desktop.
+</p>
+
+<div>
+<h5>LibreOffice 4.4.3</h5>
+<p>
+The latest LibreOffice featuring much faster load times and many bug fixes.
+</p>
+
+<div>
+<h5>Firefox 38</h5>
+<p>
+The latest firefox with it's new graphical interface and all the latest features.
+</p>
+
+<div>
+<h5>Java 7-8</h5>
+<p>
+The OpenMandriva Java stack has been entirely rebuilt to version 7 and is completely functional. We currently provide Eclipse Kepler by default.
+</p>
+
+<div>
+<h5>Printing</h5>
+<p>
+Improved support for printing, with an emphasis on the latest HP printers.
+</p>
+	</div>
+<!-- cri fine notes -->
+</section>
+
+<a id="gallery-scroll"></a>
+<section id="features-detail" class="odd-section">
+
+	<div class="row inner-section section-preamble text-center flyIn">
+		<h2>This baby is multi-platform!</h2>
+		
+		<p>
+			Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime.
+		</p>
+		<div class="hr"></div>
+	</div>
+	
+	<div class="row inner-section platform-row">
+	
+		<div class="six columns flyLeft text-center">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img alt="desktop" src="#CHEMIN{images/wireframes/d1.png}" />
+					</li>
+					
+					<li>
+						<img alt="desktop" src="#CHEMIN{images/wireframes/d2.png}" />
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		<div class="six columns flyRight text-right">
+			<h2 class="text-right">Desktop</h2>
+			<div class="hr"></div>
+			<p class="text-right">
+				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+			</p>
+			<div class="green-btn">View Demo</div>
+			<div class="blue-btn">Buy Now</div>
+		</div>
+		
+	
+	</div>
+	
+	<div class="mid-row">
+		<div class="row inner-section platform-row">
+		
+	
+			<div class="six columns flyLeft text-left">
+				<h2 class="text-left">Tablet</h2>
+				<div class="hr"></div>
+				<p class="text-left">
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+				</p>
+				<div class="green-btn">View Demo</div>
+				<div class="blue-btn">Buy Now</div>
+			</div>
+			
+			<div class="six columns flyRight text-center">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img alt="desktop" src="#CHEMIN{images/wireframes/pad1.png}" />
+						</li>
+						
+						<li>
+							<img alt="desktop" src="#CHEMIN{images/wireframes/pad2.png}" />
+						</li>
+						
+						<li>
+							<img alt="desktop" src="#CHEMIN{images/wireframes/pad3.png}" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		
+		</div>
+	</div>
+	
+	<div class="row inner-section platform-row">
+	
+		<div class="six columns flyLeft text-center">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img alt="desktop" src="#CHEMIN{images/wireframes/p1.png}" />
+					</li>
+					
+					<li>
+						<img alt="desktop" src="#CHEMIN{images/wireframes/p2.png}" />
+					</li>
+					
+					<li>
+						<img alt="desktop" src="#CHEMIN{images/wireframes/p3.png}" />
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="six columns flyRight text-right">
+			<h2 class="text-right">Smartphone</h2>
+			<div class="hr"></div>
+			<p class="text-right">
+				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+			</p>
+			<div class="green-btn">View Demo</div>
+			<div class="blue-btn">Buy Now</div>
+		</div>
+		
+	
+	</div>
+
+</section>
+
+<section id="newsletter">
+
+	<div class="row inner-section">
+		<div class="seven columns">
+			<i class="entypo newspaper">&nbsp;</i>
+			<div id="newsletter-text">
+				<h3 class="text-white">Keep up to date with our latest deals and happenings, you know you want to!</h3>	
+			</div>
+		</div>
+	
+	
+		<div class="five columns">
+			<div class="details-error-wrap hide">Please enter a valid email address</div>
+			<input class="newsletter-email left" type="text" placeholder="Your Email Address" />
+			<input class="newsletter-btn left btn form-send" type="submit" value="Subscribe" />
+			<div class="hide green-btn newsletter-btn left btn form-sent">Subscribed</div>
+		</div>
+	
+	</div>
+	
+</section>
+
+				<!-- cri -->
+
+				<!-- cri -->
+
+<a id="download-scroll"></a>
+<section id="download" class="even-section">
+
+	<div class="row inner-section section-preamble text-center flyIn">
+		<h2>Awesome features that wont break the bank</h2>
+		
+		<p>
+			You are welcome to choose any download method as per your convenience. But we recommend you download via torrents for two reasons: higher download speeds, lighter load on our mirrors/network.
+		</p>
+		<div class="hr"></div>
+	</div>
+	
+	<div class="row inner-section">
+	
+	
+		<div class="four columns price-table text-center fast-anim flyIn">
+			<div class="price-heading">
+				<h4 class="text-white">BitTorrent</h4>
+			</div>
+
+			
+			<div class="price-purchase">
+				<a target="_blank" href="http://downloads.openmandriva.org/torrents"><div class="green-btn btn">Download</div></a>
+			</div>
+		</div>
+		
+		<div class="four columns price-table text-center flyIn">
+			<div class="price-heading">
+				<h4 class="text-white">SourceForge</h4>
+			</div>
+
+			
+			<div class="price-purchase">
+				<a target="_blank" href="http://sourceforge.net/projects/openmandriva/files/release/2014.1/"><div class="green-btn btn">Download</div></a>
+			</div>
+		</div>
+		
+		<div class="four columns price-table text-center slow-anim flyIn">
+			<div class="price-heading">
+				<h4 class="text-white">Our Mirrors</h4>
+			</div>
+
+			
+			<div class="price-purchase">
+				<a target="_blank" href="http://downloads.openmandriva.org/mm"><div class="green-btn btn">Download</div></a>
+			</div>
+		</div>
+		
+		
+	</div>
+
+</section>
+<!-- cri -->
+
+<!-- cri inizio -->
+<a id="donate-scroll"></a>
+<section id="donate" class="odd-section">
+
+	<div class="row inner-section section-preamble text-center animated fadeInDown">
+		<h2>OpenMandriva Lx<br />Donate</h2>
+		
+		<p>
+			If you like OpenMandriva and appreciate our work, you can give us your love and care by donating your time or money.
+		</p>
+		<p>
+			Donate your time by joining us in our effort to build the best Linux distribution or by becoming part of our wonderful, friendly community. Or you can simply choose to donate money, that will help us with our costs.
+		</p>
+		<p>
+			In case you plan to donate more generously, check out our wiki page on <a href="https://wiki.openmandriva.org/en/Donation_and_Sponsorship" target="_blank">Donation</a>.
+		</p>
+		<div class="hr"></div>
+		<p><a href="#" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a></p>
+	</div>
+
+</section>
+<!-- cri fine -->
+<!-- cri inizio -->
+<section class="odd-section" id="sponsors">
+
+	<div class="row inner-section section-preamble text-center flyIn animated fadeInUp">
+		<h2>Sponsors</h2>
+	</div>
+	
+	<div class="row inner-section text-center">
+		<div class="three columns flyIn animated fadeInUp">
+			<img src="#CHEMIN{images/polilinux.png}" alt="polilinux">
+		</div>
+		
+		<div class="three columns flyIn animated fadeInUp">
+			<img src="#CHEMIN{images/c1.png}" alt="sponsor">
+		</div>
+		
+		<div class="three columns flyIn animated fadeInUp">
+			<img src="#CHEMIN{images/c2.png}" alt="sponsor">
+		</div>
+		
+		<div class="three columns flyIn animated fadeInUp">
+			<img src="#CHEMIN{images/c3.png}" alt="sponsor">
+		</div>
+	</div>
+	
+</section>
+<!-- cri fine -->
+
+<section id="as-seen" class="even-section">
+
+	<div class="row inner-section section-preamble text-center flyIn">
+		<h2>The Critics Love Us</h2>
+		
+		<p>
+		</p>
+		<div class="hr"></div>
+	</div>
+	
+	<div class="row inner-section text-center">
+		<div class="three columns flyIn">
+			<img alt="critic" src="#CHEMIN{images/softpedia.png}" />
+			<div class="critic-review">
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star-empty text-white"></i>
+				<h5>"A Breath of Fresh Air with a KDE Soul"</h5>
+			</div>
+		</div>
+		
+		<div class="three columns flyIn">
+			<img alt="critic" src="#CHEMIN{images/c2.png}" />
+			<div class="critic-review">
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<h5>"Intuitive and flexible - superb!"</h5>
+			</div>
+			
+		</div>
+		
+		<div class="three columns flyIn">
+			<img alt="critic" src="#CHEMIN{images/c3.png}" />
+			<div class="critic-review">
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<h5>"In a word, this app is innovative."</h5>
+			</div>
+		</div>
+		
+		<div class="three columns flyIn">
+			<img alt="critic" src="#CHEMIN{images/c4.png}" />
+			<div class="critic-review">
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star text-white"></i>
+				<i class="entypo star-empty text-white"></i>
+				<h5>"Perfection!"</h5>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<!-- cri -->
+
+<a id="faq-scroll"></a>
+<section id="faq" class="odd-section">
+
+	<div class="row inner-section section-preamble text-center flyIn">
+		<h2>Got Questions? Good, because we've got answers</h2>
+		
+		<p>
+			Temporibus autem quibusdam et aut officiis recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+		</p>
+		<div class="hr"></div>
+	</div>
+	
+	<div class="row inner-section">
+	
+		<div class="four columns fast-anim flyIn">
+	
+			<div class="question-holder">
+				<div class="question">
+					<i class="entypo circled-help text-white">&nbsp;</i><span class="text-white">How can I make payment?</span><i class="entypo chevron-thin-down text-white show-question"></i>
+				</div>
+				<div class="answer animated">
+					<p>
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+					</p>
+				</div>	
+			</div>
+			
+			<div class="question-holder">
+				<div class="question">
+					<i class="entypo circled-help text-white">&nbsp;</i><span class="text-white">Is payment recurring?</span><i class="entypo chevron-thin-down text-white show-question"></i>
+				</div>
+				<div class="answer animated">
+					<p>
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+					</p>
+				</div>	
+			</div>
+
+		
+		</div>
+		
+		<div class="four columns flyIn">
+	
+			<div class="question-holder">
+				<div class="question">
+					<i class="entypo circled-help text-white">&nbsp;</i><span class="text-white">Can I use Android?</span><i class="entypo chevron-thin-down text-white show-question"></i>
+				</div>
+				<div class="answer animated">
+					<p>
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+					</p>
+				</div>	
+			</div>
+			
+			<div class="question-holder">
+				<div class="question">
+					<i class="entypo circled-help text-white">&nbsp;</i><span class="text-white">How secure is my data?</span><i class="entypo chevron-thin-down text-white show-question"></i>
+				</div>
+				<div class="answer animated">
+					<p>
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+					</p>
+				</div>	
+			</div>
+
+		
+		</div>
+		
+		<div class="four columns slow-anim flyIn">
+	
+			<div class="question-holder">
+				<div class="question">
+					<i class="entypo circled-help text-white">&nbsp;</i><span class="text-white">Is there a trial period?</span><i class="entypo chevron-thin-down text-white show-question"></i>
+				</div>
+				<div class="answer animated">
+					<p>
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+					</p>
+				</div>	
+			</div>
+			
+			<div class="question-holder">
+				<div class="question">
+					<i class="entypo circled-help text-white">&nbsp;</i><span class="text-white">Will you marry me?</span><i class="entypo chevron-thin-down text-white show-question"></i>
+				</div>
+				<div class="answer animated">
+					<p>
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+					</p>
+				</div>	
+			</div>
+
+		
+		</div>
+		
+	
+	</div>
+
+</section>
+<!-- cri -->
+
+<a id="links-scroll"></a>
+<section id="footer">
+	<div class="row inner-section">
+	
+		<div class="three columns">
+			<h5 class="footer-title">NAVIGATE</h5>
+			
+			<ul>
+				<li><a href="#features-scroll" class="scroll">FEATURES</a></li>
+				<li><a href="#gallery-scroll" class="scroll">GALLERY</a></li>
+				<li><a href="#download-scroll" class="scroll">DOWNLOAD</a></li>
+				<li><a href="#faq-scroll" class="scroll">F.A.Q</a></li>
+				<li><a href="#donate-scroll" class="scroll">DONATE</a></li>
+			</ul>
+		</div>
+		
+		<div class="three columns">
+			<h5 class="footer-title">ABOUT US</h5>
+			
+			<ul>
+				<li><a href="http://blog.openmandriva.org/" target="_blank">Blog</a></li>
+				<li><a href="http://forums.openmandriva.org/" target="_blank">Forum</a></li>
+				<li><a href="http://wiki.openmandriva.org/" target="_blank">Wiki</a></li>
+				<li><a href="http://issues.openmandriva.org/" target="_blank">Bug Traker</a></li>
+				<li><a href="http://gallery.openmandriva.org/" target="_blank">Gallery</a></li>
+				<li><a href="http://games.openmandriva.org/" target="_blank">Games</a></li>
+				<li><a href="http://doc.openmandriva.org/" target="_blank">Documentation</a></li>
+				<li><a href="http://project.openmandriva.org/" target="_blank">Projects</a></li>
+			</ul>
+		</div>
+		
+		<div class="three columns">
+			<h5 class="footer-title">STAY INFORMED</h5>
+			
+			<div class="details-error-wrap hide">Please enter a valid email address</div>
+			<input class="newsletter-email left" type="text" placeholder="Your Email Address" />
+			<input class="newsletter-btn right btn form-send" type="submit" value="Subscribe" />
+			<div class="hide green-btn newsletter-btn right btn form-sent">Subscribed</div>
+			
+		</div>
+		
+		<div class="three columns text-right">
+			<h5 class="footer-title">CONTACT</h5>
+			<div class="mail-link">
+				<i class="entypo mail text-white"></i>
+				<a href="mailto:council@openmandriva.org">hello@openmandriva.org</a>
+				
+			</div>
+			<div class="footer-social">
+				<a target="_blank" href="https://www.facebook.com/OpenMandriva"><i class="entypo-social facebook text-white"></i></a>
+				<a target="_blank" href="https://twitter.com/OpenMandrivaOrg"><i class="entypo-social twitter text-white"></i></a>
+				<a target="_blank" href="https://plus.google.com/b/101198591581536232848/+OpenmandrivaOrg/posts"><i class="entypo-social google+ text-white"></i></a>
+				<a href="#"><i class="entypo-social dribbble text-white"></i></a>
+				<a href="#"><i class="entypo-social vimeo text-white"></i></a>
+			</div>
+			<h3 class="footer-title">ruruland</h3>
+			
+		</div>
+	
+	</div>
+</section>
+
+</div>
+
+
+  
+  <!-- Initialize JS Plugins -->
+
+<script type="text/javascript"  src="#CHEMIN{js/jquery.flexslider-min.js}"></script>
+<script type="text/javascript"  src="#CHEMIN{js/inview.js}"></script>
+<script type="text/javascript"  src="#CHEMIN{js/smooth-scroll.js}"></script>
+<script type="text/javascript"  src="#CHEMIN{js/scripts.js}"></script>
+  
+
+</body>
+</html>
